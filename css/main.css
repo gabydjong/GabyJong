@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+    background-color: #2C3E50; 
+}
+
+
+h1, h2{
+    font-size: 0.8em;
+    text-align: center;
+}
+
+h2{
+    font-size: 1em;
+}
+
+header {
+    width: 100%;
+}
+
+
+/*  ----------------- logo ------------------ */
+
+.logo{
+    height: 50px;
+}
+.logospace{
+    padding: 10px;
+}
+
+/*  ----------------- 3 kollommen onder elkaar ------------------ */
+
+.column{
+  margin: 0px;
+  padding: 20px;
+}
+
+.column:hover{
+    border: 2px solid black;
+    transition: border 1s ease-in-out;
+}
+
+/*  --------------- kleuren / styling / foto ---------------- */
+.brandstof{
+    background-color: white;
+}
+
+.snelheid{
+    background-color: #2C3E50;
+    color: white;
+}
+
+.afstand{
+    background-color: #6DBCDB;
+}
+
+img{
+    height: 40px;
+}
+
+figure{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+
+.grid-container section {
+    width: 100%;
+}
+
+/*  ---------- Charts ---------- */
+
+
+section#chart-container {
+    padding: 20px;
+    width: 100%;
+}
+
+#line , #donut , #bar{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+canvas {
+    margin: 20px 0 20px 0;
+}
+
+
+/*  ---------- footer ---------- */
+
+footer{
+    background-color: #2C3E50;
+    padding: 0px 20px 20px 20px;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    margin: 10px 0 10px 0;
+
+ }
+
+
+ /*  -------------------------------- Grids-------------------------------- */
+
+
+
+
+/*  ----------------- Breekpunt 1------------------ */
+
+
+@media (min-width: 500px) {
+
+.row{
+    width: 100%;
+    display: flex;
+
+}
+
+}
+
+/*  ----------------- Breekpunt 2------------------ */
+@media (min-width: 760px) {
+
+#flex-container {
+    display: flex;
+    width: 48.5%;
+}
+
+#line{
+    margin-right: 20px;
+}
+
+#donut{
+    margin-left: 20px;
+}
+
+}
+
+
+/*  ----------------- Breekpunt 3------------------ */
+/*  --------- Verspringen van Chart -------- */
+@media (min-width: 900px){
+
+#flex-container {
+    width: 48.8%;
+}
+
+/*  ----------------- Breekpunt 4------------------ */
+@media (min-width: 1200px){
+ #flex-container {
+    width: 49.1%;
+}
+}

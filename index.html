@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body>
+ <div class="grid-container">
+
+  <header>
+      <section class="logospace">
+         <figure class="logo"> <img class="logo" src="images/space.png"  alt="Logo waarop SpaceX te lezen is, met achter de X ruimte achtige cirkels."> </figure>
+      </section>
+
+    <div class="row">
+      <section class="column brandstof">
+         <figure class="foto"> <img class="brandstof" src="images/gas-pump-solid.svg"  alt="Een afbeelding waarop een tank te zien is."></figure>
+         <h1> Brandstof </h1>
+         <h2> 80% </h2>
+      </section>
+
+      <section class="column snelheid">
+          <figure class="foto"> <img class="snelheid" src="images/tachometer-alt-solid.svg"  alt="Een afbeelding waarop een snelheidsmeter te zien is."></figure>
+          <h1> Snelheid </h1>
+          <h2>10120 km/u</h2>
+      </section>
+
+      <section class="column afstand">
+          <figure class="foto"> <img class="raket" src="images/rocket-solid.svg"  alt="Een afbeelding waarop een raket te zien is."></figure>
+          <h1> Afstand afgelegd </h1>
+          <h2> 340 miljard km </h2>
+      </section>  
+    </div>     
+  </header>
+
+<section id="chart-container">
+  <div id="flex-container">
+    <canvas id="bar"></canvas>
+    <canvas id="donut"></canvas>
+   </div>
+    <canvas id="line"></canvas>
+</section>
+
+  <footer>
+    <p>Gemaakt door &#9400; Gaby de Jong | 2020 </p>
+  </footer>
+ </div> 
+
+      <!-- Chart js-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="js/javascript.js"></script>
+</body>
+</html>
