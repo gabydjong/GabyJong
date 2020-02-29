@@ -10,6 +10,7 @@
 <body>
  <div class="grid-container">
 
+<!-- Concrete info -->
   <header>
       <section class="logospace">
          <figure class="logo"> <img class="logo" src="images/space.png"  alt="Logo waarop SpaceX te lezen is, met achter de X ruimte achtige cirkels."> </figure>
@@ -36,8 +37,13 @@
     </div>     
   </header>
 
+<!-- Einde van concrete info -->
+
+<!-- Info Mars / Aarde -->
+
+<div id="flex-container1">
 <article class="container-bestemming">
-  <h2 class="titel-bestemming"> Bestemming </h2>
+  <h2 class="titel"> Informatie planeten </h2>
 
   <div class="tab-group">
     <ul class="tabs">
@@ -51,34 +57,122 @@
         <dl class="details">
           <dt>Naam</dt>
           <dd>Mars</dd>
-          <dt>Ontdekt</dt>
-          <dd> jaar ..</dd>
-          <dt> Ontdekt door </dt>
-          <dd> naam ondtekker</dd>
+          <dt>Zuurstof</dt>
+          <dd>0,13 %</dd>
+          <dt>Temperatuur</dt>
+          <dd>−63 &deg;C = 210 K</dd>
+          <dt> Omtrek </dt>
+          <dd> 3389,5 km</dd>
         </dl>
       </div>
-       <div class="tab-panel" hidden>
+       <div class="tab-panel">
         <img class="flex-img details-img" src="images/aarde.jpg" alt="Foto van de planeet Mars, Mars heeft een bruine/oranje kleur. Over de planeet valt een schaduw aan de rechter zijde. ">
         <dl class="details">
           <dt>Naam</dt>
-          <dt>Aarde</dt>
-          <dt>Ontdekt</dt>
-          <dd> jaar ..</dd>
-          <dt> Ontdekt door </dt>
-          <dd> naam ondtekker</dd>
+          <dd>Aarde</dd>
+          <dt>Zuurstof</dt>
+          <dd> 21 %</dd>
+          <dt> Temperatuur </dt>
+          <dd> 0,87 &deg;C </dd>
+          <dt> Omtrek </dt>
+          <dd> 40075 km</dd>
         </dl>
       </div>     
     </div>
   </div>
 </article>
 
+
+<!-- Einde Info mars/aarde -->
+<!-- Table -->
+
+<article class="article-table">
+  <h2 class="titel"> Rooster van de dag </h2>
+    <div class="tab-group">
+    <ul class="tabs">
+      <li class="tab tab-current"><a href="#"> Vandaag </a></li>
+      <li class="tab"><a href="#"> Morgen </a></li>
+    </ul>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col"> Tijd </th>
+          <th scope="col"> Activiteit </th>
+          <th scope="col"> Voor groep </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope="row"> 9:00</th>
+          <td>Ontbijten</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <th scope="row">9:30</th>
+          <td>Ontbijten</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <th scope="row">10:00</th>
+          <td>Mededeling van de dag</td>
+          <td> 1-2 </td>
+        </tr>
+        <tr>
+          <th scope="row">12:00</th>
+          <td>Middag eten</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <th scope="row">12:30</th>
+          <td>Middag eten</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <th scope="row">14:00</th>
+          <td>Sporten</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <th scope="row">15:00</th>
+          <td>Sporten</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <th scope="row">18:00</th>
+          <td>Avond eten</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <th scope="row">18:30</th>
+          <td>Avond eten</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <th scope="row">22:00</th>
+          <td>Slapen</td>
+          <td>1-2</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</article>
+</div>
+
+<!-- Einde table -->
+
+<!-- Charts -->
+
 <section id="chart-container">
-  <div id="flex-container">
+  <div id="flex-containerr">
     <canvas id="bar"></canvas>
     <canvas id="donut"></canvas>
    </div>
-    <canvas id="line"></canvas>
+   <canvas id="line"></canvas>
 </section>
+
+<!-- Einde Charts -->
 
   <footer>
     <p>Gemaakt door &#9400; Gaby de Jong | 2020 </p>

@@ -1,7 +1,8 @@
 
+
 /* ----------- Lijn diagram -------------- */
 
-/*Chart.defaults.global.defaultFontColor = 'white'; */
+Chart.defaults.global.defaultFontColor = 'white'; 
 var ctx = document.getElementById('line').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'line',

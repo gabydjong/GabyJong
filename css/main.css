@@ -44,70 +44,7 @@ header {
     transition: border 1s ease-in-out;
 }
 
-/*  ----------------- Mars / Aarde info ------------------ */
-
-.container-bestemming{
-    padding: 20px;
-}
-
-.titel-bestemming{
-    color: white;
-}
-
-.flex-img{
-    display: inline-block;
-    width: 100%;
-}
-
-.details-img{
-    margin-bottom: 1.4rem;
-    max-width: 20em;
-}
-.details{
-    margin: 0 0 1.4rem;
-    padding: 0;
-}
-
-
-.details dt{
-    margin: 0;
-    font-weight: bold;
-    color: white;
-}
-
-
-.details dd{
-    margin: 0;
-    color: white;
-}
-
-.tabs{
-    margin: 0 0 1.4rem;
-    overflow: hidden;
-    padding: 0;
-    list-style-type: none;
-}
-
-.tab{
-    float: left;
-    border-bottom: 1px solid white;
-    border-top: 1px solid #2C3E50;
-}
-
-.tab-current{
-    border-bottom-color: #2C3E50;
-    border-top-color: white;
-    border-left: 1px solid #2C3E50;
-    border-right: 1px solid white;
-}
-
-.tab a{
-    display: block;
-    padding: .5em .9em;
-    color: white;
-}
-
-/*  --------------- kleuren / styling / foto ---------------- */
+/*  --------------- kleuren / styling / foto van concrete info ---------------- */
 .brandstof{
     background-color: white;
 }
@@ -143,16 +80,116 @@ figure{
     width: 100%;
 }
 
+
+/*  ----------------- Mars / Aarde info ------------------ */
+
+.container-bestemming{
+    padding: 20px 20px 0px 20px;
+}
+
+.titel{
+    color: white;
+    padding: 20px 0px 20px 0px;
+    text-align: left;
+}
+
+.flex-img{
+    display: inline-block;
+    width: 100%;
+}
+
+.details-img{
+    margin-bottom: 1.4rem;
+
+}
+
+.details{
+    margin: 0 0 1.4rem;
+    padding: 0;
+
+}
+
+.details dt{
+    margin: 0;
+    font-weight: bold;
+    color: white;
+}
+
+
+.details dd{
+    margin: 0;
+    color: white;
+}
+
+.tabs{
+    margin: 0 0 1.4rem;
+    overflow: hidden;
+    padding: 0;
+    list-style-type: none;
+}
+
+.tab{
+    float: left;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.tab-current{
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.tab a{
+    display: block;
+    padding: .5em .9em;
+    color: white;
+}
+
+/*  ----------------- Table rooster ------------------ */
+
+table{
+    min-width: 35em;
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: #e2e2e2;
+    text-align: left;
+}
+
+thead th{
+    padding: .3em;
+    border-bottom: 1px solid grey;
+}
+
+td,
+tbody th{
+    border-bottom: 1px solid grey;
+    padding: .3em;
+    text-align: left;
+    color: white;
+}
+
+.table-wrap{
+    overflow-x: auto;
+}
+
+.article-table{
+    padding: 20px;
+}
+
 /*  ---------- Charts ---------- */
 
 
 section#chart-container {
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
     width: 100%;
 }
 
 #line , #donut , #bar{
-    background-color: white;
+    background-color: #12202F;
     border-radius: 10px;
     padding: 20px;
 }
@@ -177,11 +214,6 @@ footer p{
  }
 
 
- /*  -------------------------------- Grids-------------------------------- */
-
-
-
-
 /*  ----------------- Breekpunt 1------------------ */
 
 
@@ -193,29 +225,46 @@ footer p{
 
 }
 
+
+
 }
 
 /*  ----------------- Breekpunt 2------------------ */
 @media (min-width: 760px) {
 
-.container-bestemming{
-    width: 50%;
-}
-
-#flex-container {
+/* Er springen nu elementen naast elkaar */
+#flex-container1{
     display: flex;
-    width: 48.5%;
 }
 
-#line{
-    margin-right: 20px;
+#flex-containerr {
+    display: flex;
+    width: 47.6%;
 }
 
+/* zorgen dat informatie planeten niet te klein wordt*/
+table{
+    min-width: 20.8em;
+}
+
+/* zorgt dat er margin tussen de charts komt*/
 #donut{
     margin-left: 20px;
 }
 
+#bar{
+    margin-right: 20px;
+}
 
+/* Informatie planeten styling */
+.details{
+    margin-left: 1em;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.details-img{
+    width: calc(60% - 1em);
 }
 
 
@@ -223,13 +272,24 @@ footer p{
 /*  --------- Verspringen van Chart -------- */
 @media (min-width: 900px){
 
-#flex-container {
-    width: 48.8%;
+#flex-containerr {
+    width: 47.8%;
+}
+
+/* zorgen dat informatie planeten en rooster weer beter verdeelt zijn */
+table{
+    min-width: 30em;
+}
 }
 
 /*  ----------------- Breekpunt 4------------------ */
 @media (min-width: 1200px){
- #flex-container {
-    width: 49.1%;
+ #flex-containerr {
+    width: 48.5%;
+}
+
+/* zorgen dat informatie planeten en rooster weer beter verdeelt zijn */
+table{
+    min-width: 34.5em;
 }
 }
