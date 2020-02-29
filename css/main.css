@@ -44,6 +44,69 @@ header {
     transition: border 1s ease-in-out;
 }
 
+/*  ----------------- Mars / Aarde info ------------------ */
+
+.container-bestemming{
+    padding: 20px;
+}
+
+.titel-bestemming{
+    color: white;
+}
+
+.flex-img{
+    display: inline-block;
+    width: 100%;
+}
+
+.details-img{
+    margin-bottom: 1.4rem;
+    max-width: 20em;
+}
+.details{
+    margin: 0 0 1.4rem;
+    padding: 0;
+}
+
+
+.details dt{
+    margin: 0;
+    font-weight: bold;
+    color: white;
+}
+
+
+.details dd{
+    margin: 0;
+    color: white;
+}
+
+.tabs{
+    margin: 0 0 1.4rem;
+    overflow: hidden;
+    padding: 0;
+    list-style-type: none;
+}
+
+.tab{
+    float: left;
+    border-bottom: 1px solid white;
+    border-top: 1px solid #2C3E50;
+}
+
+.tab-current{
+    border-bottom-color: #2C3E50;
+    border-top-color: white;
+    border-left: 1px solid #2C3E50;
+    border-right: 1px solid white;
+}
+
+.tab a{
+    display: block;
+    padding: .5em .9em;
+    color: white;
+}
+
 /*  --------------- kleuren / styling / foto ---------------- */
 .brandstof{
     background-color: white;
@@ -58,7 +121,15 @@ header {
     background-color: #6DBCDB;
 }
 
-img{
+img.brandstof {
+    height: 40px;
+}
+
+img.snelheid {
+    height: 40px;
+}
+
+img.raket {
     height: 40px;
 }
 
@@ -127,6 +198,10 @@ footer p{
 /*  ----------------- Breekpunt 2------------------ */
 @media (min-width: 760px) {
 
+.container-bestemming{
+    width: 50%;
+}
+
 #flex-container {
     display: flex;
     width: 48.5%;
@@ -139,6 +214,7 @@ footer p{
 #donut{
     margin-left: 20px;
 }
+
 
 }
 
