@@ -9,21 +9,8 @@ body{
 }
 
 
-h1, h2{
-    font-size: 0.8em;
-    text-align: center;
-}
 
-h2{
-    font-size: 1em;
-}
-
-header {
-    width: 100%;
-}
-
-
-/*  ----------------- logo ------------------ */
+/*  ----------------- logo SpaceX ------------------ */
 
 .logo{
     height: 50px;
@@ -32,19 +19,15 @@ header {
     padding: 10px;
 }
 
-/*  ----------------- 3 kollommen onder elkaar ------------------ */
+/*  ----------------- Korte info brandstof/snelheid/afstand ------------------ */
 
-.column{
-  margin: 0px;
-  padding: 20px;
+/*  ----------------- Styling  ------------------ */
+
+h1, h2{
+    font-size: 1em;
+    text-align: center;
 }
 
-.column:hover{
-    border: 2px solid black;
-    transition: border 1s ease-in-out;
-}
-
-/*  --------------- kleuren / styling / foto van concrete info ---------------- */
 .brandstof{
     background-color: white;
 }
@@ -58,17 +41,14 @@ header {
     background-color: #6DBCDB;
 }
 
-img.brandstof {
+/*  ----------------- SVG grootte  ------------------ */
+
+
+img.brandstof, img.snelheid, img.raket {
     height: 40px;
 }
 
-img.snelheid {
-    height: 40px;
-}
-
-img.raket {
-    height: 40px;
-}
+/*  ----------------- Positie met behulp van flexbox ------------------ */
 
 figure{
     display: flex;
@@ -76,30 +56,74 @@ figure{
     margin: 0px;
 }
 
+/* zorgt ervoor dat de section over de gehele breedte is*/
 .grid-container section {
     width: 100%;
 }
 
+.column{
+  margin: 0px;
+  padding: 20px;
+}
+
+.column:hover{
+    border: 2px solid black;
+    transition: border 1s ease-in-out;
+}
+
+
+/*  ----------------- Rooster van de dag ------------------ */
+
+/* Minimale breedte zodat tabel niet te klein kan worden */
+table{
+    min-width: 35em;
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: #e2e2e2;
+    text-align: left;
+}
+
+thead th{
+    padding: .4em;
+    border-bottom: 1px solid grey;
+}
+
+td,
+tbody th{
+    border-bottom: 1px solid grey;
+    padding: .3em;
+    text-align: left;
+    color: white;
+}
+
+.article-table{
+    margin: 20px;
+}
+
+/* Zorgt voor een scrollbar als het scherm te klein is */
+.table-wrap{
+    overflow-x: auto;
+}
 
 /*  ----------------- Mars / Aarde info ------------------ */
 
 .infoplaneten{
-    padding: 20px 20px 0px 60px;
+    margin: 20px 20px 0px 20px;
 }
 
 .titel{
     color: white;
-    padding: 20px 0px 20px 0px;
+    margin: 20px 0px 20px 0px;
     text-align: left;
 }
 
-.flex-img{
-    display: inline-block;
-    width: 100%;
-}
 
 .details-img{
     margin-bottom: 1.4rem;
+    display: inline-block;
+    width: 100%;
 
 }
 
@@ -115,14 +139,13 @@ figure{
     color: white;
 }
 
-
 .details dd{
     margin: 0;
     color: white;
 }
 
 .tabs{
-    margin: 0 0 1.4rem;
+    margin: 0px 0px 10px 0px;
     overflow: hidden;
     padding: 0;
     list-style-type: none;
@@ -130,16 +153,10 @@ figure{
 
 .tab{
     float: left;
-    border-bottom: 1px solid white;
-    border-top: 1px solid white;
-    border-right: 1px solid white;
+    border: 1px solid white;
+    margin-bottom: 10px;
 }
 
-.tab-current{
-    border-left: 1px solid white;
-    border-top: 1px solid white;
-    border-right: 1px solid white;
-}
 
 .tab a{
     display: block;
@@ -147,38 +164,6 @@ figure{
     color: white;
 }
 
-/*  ----------------- Table rooster ------------------ */
-
-table{
-    min-width: 35em;
-    border-collapse: collapse;
-}
-
-thead{
-    background-color: #e2e2e2;
-    text-align: left;
-}
-
-thead th{
-    padding: .3em;
-    border-bottom: 1px solid grey;
-}
-
-td,
-tbody th{
-    border-bottom: 1px solid grey;
-    padding: .3em;
-    text-align: left;
-    color: white;
-}
-
-.table-wrap{
-    overflow-x: auto;
-}
-
-.article-table{
-    padding: 20px;
-}
 
 /*  ---------- Charts ---------- */
 
@@ -188,7 +173,7 @@ section#chart-container {
     width: 100%;
 }
 
-#line , #donut , #bar{
+#line , #pie , #bar{
     background-color: #12202F;
     border-radius: 10px;
     padding: 20px;
@@ -216,7 +201,7 @@ footer p{
 
 /*  ----------------- Breekpunt 1------------------ */
 
-
+/*  ------ korte info stukjes komen nu naast elkaar ----------- */
 @media (min-width: 500px) {
 
 .row{
@@ -225,14 +210,13 @@ footer p{
 
 }
 
-
-
 }
 
 /*  ----------------- Breekpunt 2------------------ */
-@media (min-width: 760px) {
+@media (min-width: 600px) {
 
-/* Er springen nu elementen naast elkaar */
+/* Er springen nu elementen naast elkaar, omdat het kwa 
+content niet meer anders kan. */
 #flex-container1{
     display: flex;
 }
@@ -242,13 +226,25 @@ footer p{
     width: 47.6%;
 }
 
-/* zorgen dat informatie planeten niet te klein wordt*/
+/* Tekst van planeten staat nu rechts van de afbeeldingen in plaats onder. */
+.details{
+    margin-left: 1em;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Grootte van de planeten afbeeldingen*/
+.details-img{
+    width: calc(50% - 1em);
+}
+
+/* Ruimte rooster en info planeten is nu bijna gelijk */
 table{
-    min-width: 20.8em;
+    min-width: 45.5vw;
 }
 
 /* zorgt dat er margin tussen de charts komt*/
-#donut{
+#pie{
     margin-left: 20px;
 }
 
@@ -256,40 +252,20 @@ table{
     margin-right: 20px;
 }
 
-/* Informatie planeten styling */
-.details{
-    margin-left: 1em;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.details-img{
-    width: calc(50% - 1em);
-}
 
 
-/*  ----------------- Breekpunt 3------------------ */
+/*  ----------------- Breekpunt 4------------------ */
 /*  --------- Verspringen van Chart -------- */
 @media (min-width: 900px){
 
-#flex-containerr {
-    width: 47.8%;
+
 }
 
-/* zorgen dat informatie planeten en rooster weer beter verdeelt zijn */
-table{
-    min-width: 30em;
-}
-}
-
-/*  ----------------- Breekpunt 4------------------ */
+/*  ----------------- Breekpunt 5------------------ */
 @media (min-width: 1200px){
+
+/* chart grootte */
  #flex-containerr {
     width: 48.5%;
-}
-
-/* zorgen dat informatie planeten en rooster weer beter verdeelt zijn */
-table{
-    min-width: 34.5em;
 }
 }

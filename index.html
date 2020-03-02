@@ -39,58 +39,13 @@
 
 <!-- Einde van concrete info -->
 
-<!-- Info Mars / Aarde -->
-
-<div id="flex-container1">
-<article class="infoplaneten">
-  <h2 class="titel"> Informatie planeten </h2>
-
-  <div class="tab-group">
-    <ul class="tabs">
-      <li class="tab tab-current"><a href="#"> Mars </a></li>
-      <li class="tab"><a href="#"> de Aarde </a></li>
-    </ul>
-
-    <div class="tab-panels">
-      <div class="tab-panel">
-        <img class="flex-img details-img" src="images/mars.jpg" alt="Foto van de planeet Mars, Mars heeft een bruine/oranje kleur. Over de planeet valt een schaduw aan de rechter zijde. ">
-        <dl class="details">
-          <dt>Naam</dt>
-          <dd>Mars</dd>
-          <dt>Zuurstof</dt>
-          <dd>0,13 %</dd>
-          <dt>Temperatuur</dt>
-          <dd>−63 &deg;C = 210 K</dd>
-          <dt> Omtrek </dt>
-          <dd> 3389,5 km</dd>
-        </dl>
-      </div>
-       <div class="tab-panel">
-        <img class="flex-img details-img" src="images/aarde.jpg" alt="Foto van de planeet Mars, Mars heeft een bruine/oranje kleur. Over de planeet valt een schaduw aan de rechter zijde. ">
-        <dl class="details">
-          <dt>Naam</dt>
-          <dd>Aarde</dd>
-          <dt>Zuurstof</dt>
-          <dd> 21 %</dd>
-          <dt> Temperatuur </dt>
-          <dd> 0,87 &deg;C </dd>
-          <dt> Omtrek </dt>
-          <dd> 40075 km</dd>
-        </dl>
-      </div>     
-    </div>
-  </div>
-</article>
-
-
-<!-- Einde Info mars/aarde -->
 <!-- Table -->
-
+<div id="flex-container1">
 <article class="article-table">
   <h2 class="titel"> Rooster van de dag </h2>
     <div class="tab-group">
     <ul class="tabs">
-      <li class="tab tab-current"><a href="#"> Vandaag </a></li>
+      <li class="tab"><a href="#"> Vandaag </a></li>
       <li class="tab"><a href="#"> Morgen </a></li>
     </ul>
   <div class="table-wrap">
@@ -116,7 +71,7 @@
         </tr>
         <tr>
           <th scope="row">10:00</th>
-          <td>Mededeling van de dag</td>
+          <td>Mededeling</td>
           <td> 1-2 </td>
         </tr>
         <tr>
@@ -158,16 +113,59 @@
     </table>
   </div>
 </article>
-</div>
 
 <!-- Einde table -->
+
+<!-- Info Mars / Aarde -->
+<article class="infoplaneten">
+  <h2 class="titel"> Informatie planeten </h2>
+
+  <div class="tab-group">
+    <ul class="tabs">
+      <li class="tab"><a href="#"> Mars </a></li>
+      <li class="tab"><a href="#"> de Aarde </a></li>
+    </ul>
+
+    <div class="tab-panels">
+      <div class="tab-panel">
+        <img class="details-img" src="images/mars.jpg" alt="Foto van de planeet Mars, Mars heeft een bruine/oranje kleur. Over de planeet valt een schaduw aan de rechter zijde. ">
+        <dl class="details">
+          <dt>Naam</dt>
+          <dd>Mars</dd>
+          <dt>Zuurstof</dt>
+          <dd>0,13 %</dd>
+          <dt>Temperatuur</dt>
+          <dd>−63 &deg;C = 210 K</dd>
+          <dt> Omtrek </dt>
+          <dd> 3389,5 km</dd>
+        </dl>
+      </div>
+       <div class="tab-panel">
+        <img class="details-img" src="images/aarde.jpg" alt="Foto van de planeet Mars, Mars heeft een bruine/oranje kleur. Over de planeet valt een schaduw aan de rechter zijde. ">
+        <dl class="details">
+          <dt>Naam</dt>
+          <dd>Aarde</dd>
+          <dt>Zuurstof</dt>
+          <dd> 21 %</dd>
+          <dt> Temperatuur </dt>
+          <dd> 0,87 &deg;C </dd>
+          <dt> Omtrek </dt>
+          <dd> 40075 km</dd>
+        </dl>
+      </div>     
+    </div>
+  </div>
+</article>
+</div>
+
+<!-- Einde Info mars/aarde -->
 
 <!-- Charts -->
 
 <section id="chart-container">
   <div id="flex-containerr">
     <canvas id="bar"></canvas>
-    <canvas id="donut"></canvas>
+    <canvas id="pie"></canvas>
    </div>
    <canvas id="line"></canvas>
 </section>

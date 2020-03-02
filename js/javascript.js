@@ -3,7 +3,7 @@
 /* ----------- Lijn diagram -------------- */
 Chart.defaults.global.defaultFontColor = 'white'; 
 var ctx = document.getElementById('line');
-var line = new Chart(ctx, {
+var lijndiagram = new Chart(ctx, {
     type: 'line',
     data: {
         labels: ['Jan', 'Feb', 'Maart', 'April', 'Mei'],
@@ -37,8 +37,8 @@ var line = new Chart(ctx, {
 
 
 /* ----------- Donut -------------- */
-var ctx = document.getElementById('donut');
-var donut = new Chart (ctx, {
+var ctx = document.getElementById('pie');
+var taart = new Chart (ctx, {
     type: 'pie',
     data: {
       labels: ["Verbruikte brandstof", "Aanwezige brandstof"],
