@@ -1,7 +1,6 @@
 
 
 /* ----------- Lijn diagram -------------- */
-
 Chart.defaults.global.defaultFontColor = 'white'; 
 var ctx = document.getElementById('line');
 var line = new Chart(ctx, {
@@ -26,6 +25,7 @@ var line = new Chart(ctx, {
     },
     options: {
         responsive: true,
+        maintainAspectRatio: false,
         scales: {
             yAxes: [{
                 ticks: {
@@ -50,6 +50,8 @@ var donut = new Chart (ctx, {
       }]
     },
     options: {
+      responsive:true,
+        maintainAspectRatio: false,
       title: {
         display: true,
         text: 'Brandstof in het ruimteschip'
@@ -74,6 +76,8 @@ var bar = new Chart (ctx, {
       ]
     },
     options: {
+      responsive:true,
+      maintainAspectRatio: false,
       legend: { display: false },
       title: {
         display: true,
