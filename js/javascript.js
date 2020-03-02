@@ -4,7 +4,7 @@
 
 Chart.defaults.global.defaultFontColor = 'white'; 
 var ctx = document.getElementById('line');
-var myChart = new Chart(ctx, {
+var line = new Chart(ctx, {
     type: 'line',
     data: {
         labels: ['Jan', 'Feb', 'Maart', 'April', 'Mei'],
@@ -39,7 +39,7 @@ var myChart = new Chart(ctx, {
 
 /* ----------- Donut -------------- */
 var ctx = document.getElementById('donut');
-var myChart = new Chart (ctx, {
+var donut = new Chart (ctx, {
     type: 'pie',
     data: {
       labels: ["Verbruikte brandstof", "Aanwezige brandstof"],
@@ -61,7 +61,7 @@ var myChart = new Chart (ctx, {
 /* -----------staaf diagram (bar)-------------- */
 
 var ctx = document.getElementById('bar');
-var myChart = new Chart (ctx, {
+var bar = new Chart (ctx, {
     type: 'horizontalBar',
     data: {
       labels: ["maandag", "dinsdag", "woensdag", "donderdag", "vandaag"],

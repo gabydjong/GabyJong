@@ -83,8 +83,8 @@ figure{
 
 /*  ----------------- Mars / Aarde info ------------------ */
 
-.container-bestemming{
-    padding: 20px 20px 0px 20px;
+.infoplaneten{
+    padding: 20px 20px 0px 45px;
 }
 
 .titel{
@@ -214,6 +214,52 @@ footer p{
  }
 
 
+ /*  ---------- grid ---------- */
+
+ .header {
+        grid-area: header;
+    }
+
+    .rooster {
+        grid-area: rooster;
+    }
+
+    .planeten {
+        grid-area: planeten;
+    }
+
+    .staafdiagram {
+        grid-area: staafdiagram;
+    }
+
+    .donutdiagram{
+        grid-area:donutdiagram;
+    }
+
+    .lijndiagram{
+        grid-area:lijndiagram;
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+
+
+
+  .grid-container {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+     "header"
+     "rooster"
+     "planeten"
+     "staafdiagram"
+     "donutdiagram"
+     "lijndiagram"
+     "footer"
+  }
+
+
 /*  ----------------- Breekpunt 1------------------ */
 
 
@@ -231,6 +277,17 @@ footer p{
 
 /*  ----------------- Breekpunt 2------------------ */
 @media (min-width: 760px) {
+
+.grid-container {
+
+        grid-template-columns: 50%;
+        grid-template-areas:
+    "header   header"
+        "rooster  planeten"
+        "staafdiagram donutdiagram"
+        "lijndiagram  lijndiagram"
+        "footer   footer";
+    }
 
 /* Er springen nu elementen naast elkaar */
 #flex-container1{
@@ -264,7 +321,7 @@ table{
 }
 
 .details-img{
-    width: calc(60% - 1em);
+    width: calc(50% - 1em);
 }
 
 
