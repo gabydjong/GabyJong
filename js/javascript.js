@@ -2,10 +2,7 @@
 
 /* ----------- Lijn diagram -------------- */
 Chart.defaults.global.defaultFontColor = 'white'; 
-<<<<<<< HEAD
 
-=======
->>>>>>> parent of ede43cb... java gewijzigd
 var ctx = document.getElementById('line').getContext('2d');
 var myChart = new Chart(ctx, {
 
@@ -42,16 +39,11 @@ var myChart = new Chart(ctx, {
 });
 
 
-<<<<<<< HEAD
 
-/* ----------- Donut -------------- */
-var ctx = document.getElementById('donut');
-var donut = new Chart (ctx, {
-=======
+
 /* ----------- Donut-------------- */
 
 new Chart(document.getElementById("donut"), {
->>>>>>> parent of ede43cb... java gewijzigd
     type: 'pie',
     data: {
       labels: ["Verbruikte brandstof", "Aanwezige brandstof"],
@@ -74,12 +66,9 @@ new Chart(document.getElementById("donut"), {
 
 /* -----------staaf diagram (bar)-------------- */
 
-<<<<<<< HEAD
-var ctx = document.getElementById('bar');
-var bar = new Chart (ctx, {
-=======
+
+
 new Chart(document.getElementById("bar"), {
->>>>>>> parent of ede43cb... java gewijzigd
     type: 'horizontalBar',
     data: {
       labels: ["maandag", "dinsdag", "woensdag", "donderdag", "vandaag"],
