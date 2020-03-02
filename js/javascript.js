@@ -2,10 +2,8 @@
 
 /* ----------- Lijn diagram -------------- */
 Chart.defaults.global.defaultFontColor = 'white'; 
-
-var ctx = document.getElementById('line').getContext('2d');
-var myChart = new Chart(ctx, {
-
+var ctx = document.getElementById('line');
+var line = new Chart(ctx, {
     type: 'line',
     data: {
         labels: ['Jan', 'Feb', 'Maart', 'April', 'Mei'],
@@ -27,7 +25,6 @@ var myChart = new Chart(ctx, {
     },
     options: {
         responsive: true,
-        maintainAspectRatio: false,
         scales: {
             yAxes: [{
                 ticks: {
@@ -39,11 +36,9 @@ var myChart = new Chart(ctx, {
 });
 
 
-
-
-/* ----------- Donut-------------- */
-
-new Chart(document.getElementById("donut"), {
+/* ----------- Donut -------------- */
+var ctx = document.getElementById('donut');
+var donut = new Chart (ctx, {
     type: 'pie',
     data: {
       labels: ["Verbruikte brandstof", "Aanwezige brandstof"],
@@ -55,7 +50,6 @@ new Chart(document.getElementById("donut"), {
     },
     options: {
       responsive:true,
-        maintainAspectRatio: false,
       title: {
         display: true,
         text: 'Brandstof in het ruimteschip'
@@ -66,9 +60,8 @@ new Chart(document.getElementById("donut"), {
 
 /* -----------staaf diagram (bar)-------------- */
 
-
-
-new Chart(document.getElementById("bar"), {
+var ctx = document.getElementById('bar');
+var bar = new Chart (ctx, {
     type: 'horizontalBar',
     data: {
       labels: ["maandag", "dinsdag", "woensdag", "donderdag", "vandaag"],
@@ -82,7 +75,6 @@ new Chart(document.getElementById("bar"), {
     },
     options: {
       responsive:true,
-      maintainAspectRatio: false,
       legend: { display: false },
       title: {
         display: true,

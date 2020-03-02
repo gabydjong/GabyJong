@@ -84,7 +84,7 @@ figure{
 /*  ----------------- Mars / Aarde info ------------------ */
 
 .infoplaneten{
-    padding: 20px;
+    padding: 20px 20px 0px 60px;
 }
 
 .titel{
@@ -198,13 +198,6 @@ canvas {
     margin: 20px 0 20px 0;
 }
 
-.staafdiagram , .donutdiagram, .lijndiagram {
-    height:77.5vh; 
-    width: 97vw;
-    padding: 0px 20px 20px 20px;
-}
-
-
 
 /*  ---------- footer ---------- */
 
@@ -221,50 +214,6 @@ footer p{
  }
 
 
- /*  ---------- grid ---------- */
-
- .header {
-        grid-area: header;
-    }
-
-    .rooster {
-        grid-area: rooster;
-    }
-
-    .planeten {
-        grid-area: planeten;
-    }
-
-    .staafdiagram {
-        grid-area: staafdiagram;
-    }
-
-    .donutdiagram{
-        grid-area:donutdiagram;
-    }
-
-    .lijndiagram{
-        grid-area:lijndiagram;
-    }
-
-    .footer {
-        grid-area: footer;
-    }
-
-  .grid-container {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-areas:
-     "header"
-     "rooster"
-     "planeten"
-     "staafdiagram"
-     "donutdiagram"
-     "lijndiagram"
-     "footer"
-  }
-
-
 /*  ----------------- Breekpunt 1------------------ */
 
 
@@ -275,41 +224,37 @@ footer p{
     display: flex;
 
 }
+
+
+
 }
 
 /*  ----------------- Breekpunt 2------------------ */
 @media (min-width: 760px) {
 
-.grid-container {
-
-        grid-template-columns: 50%;
-        grid-template-areas:
-    "header   header"
-        "rooster  planeten"
-        "staafdiagram donutdiagram"
-        "lijndiagram  lijndiagram"
-        "footer   footer";
-    }
-
-.staafdiagram , .donutdiagram {
-    padding-left: 40px;
-    height:45vh; 
-    width:45vw;
-}
-
-.lijndiagram{
+/* Er springen nu elementen naast elkaar */
+#flex-container1{
     display: flex;
-    padding-left: 60px;
-    height:45vh; 
-    width: 90vw;
 }
 
+#flex-containerr {
+    display: flex;
+    width: 47.6%;
+}
 
 /* zorgen dat informatie planeten niet te klein wordt*/
 table{
     min-width: 20.8em;
 }
 
+/* zorgt dat er margin tussen de charts komt*/
+#donut{
+    margin-left: 20px;
+}
+
+#bar{
+    margin-right: 20px;
+}
 
 /* Informatie planeten styling */
 .details{
@@ -327,6 +272,9 @@ table{
 /*  --------- Verspringen van Chart -------- */
 @media (min-width: 900px){
 
+#flex-containerr {
+    width: 47.8%;
+}
 
 /* zorgen dat informatie planeten en rooster weer beter verdeelt zijn */
 table{
@@ -336,6 +284,9 @@ table{
 
 /*  ----------------- Breekpunt 4------------------ */
 @media (min-width: 1200px){
+ #flex-containerr {
+    width: 48.5%;
+}
 
 /* zorgen dat informatie planeten en rooster weer beter verdeelt zijn */
 table{

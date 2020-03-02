@@ -11,7 +11,6 @@
  <div class="grid-container">
 
 <!-- Concrete info -->
-  <div class="header">
   <header>
       <section class="logospace">
          <figure class="logo"> <img class="logo" src="images/space.png"  alt="Logo waarop SpaceX te lezen is, met achter de X ruimte achtige cirkels."> </figure>
@@ -37,11 +36,56 @@
       </section>  
     </div>     
   </header>
-</div>
 
 <!-- Einde van concrete info -->
+
+<!-- Info Mars / Aarde -->
+
+<div id="flex-container1">
+<article class="infoplaneten">
+  <h2 class="titel"> Informatie planeten </h2>
+
+  <div class="tab-group">
+    <ul class="tabs">
+      <li class="tab tab-current"><a href="#"> Mars </a></li>
+      <li class="tab"><a href="#"> de Aarde </a></li>
+    </ul>
+
+    <div class="tab-panels">
+      <div class="tab-panel">
+        <img class="flex-img details-img" src="images/mars.jpg" alt="Foto van de planeet Mars, Mars heeft een bruine/oranje kleur. Over de planeet valt een schaduw aan de rechter zijde. ">
+        <dl class="details">
+          <dt>Naam</dt>
+          <dd>Mars</dd>
+          <dt>Zuurstof</dt>
+          <dd>0,13 %</dd>
+          <dt>Temperatuur</dt>
+          <dd>−63 &deg;C = 210 K</dd>
+          <dt> Omtrek </dt>
+          <dd> 3389,5 km</dd>
+        </dl>
+      </div>
+       <div class="tab-panel">
+        <img class="flex-img details-img" src="images/aarde.jpg" alt="Foto van de planeet Mars, Mars heeft een bruine/oranje kleur. Over de planeet valt een schaduw aan de rechter zijde. ">
+        <dl class="details">
+          <dt>Naam</dt>
+          <dd>Aarde</dd>
+          <dt>Zuurstof</dt>
+          <dd> 21 %</dd>
+          <dt> Temperatuur </dt>
+          <dd> 0,87 &deg;C </dd>
+          <dt> Omtrek </dt>
+          <dd> 40075 km</dd>
+        </dl>
+      </div>     
+    </div>
+  </div>
+</article>
+
+
+<!-- Einde Info mars/aarde -->
 <!-- Table -->
-<div class="Rooster">
+
 <article class="article-table">
   <h2 class="titel"> Rooster van de dag </h2>
     <div class="tab-group">
@@ -118,71 +162,21 @@
 
 <!-- Einde table -->
 
-
-<!-- Info Mars / Aarde -->
-<div class="planeten">
-<article class="infoplaneten">
-  <h2 class="titel"> Informatie planeten </h2>
-
-  <div class="tab-group">
-    <ul class="tabs">
-      <li class="tab tab-current"><a href="#"> Mars </a></li>
-      <li class="tab"><a href="#"> de Aarde </a></li>
-    </ul>
-
-    <div class="tab-panels">
-      <div class="tab-panel">
-        <img class="flex-img details-img" src="images/mars.jpg" alt="Foto van de planeet Mars, Mars heeft een bruine/oranje kleur. Over de planeet valt een schaduw aan de rechter zijde. ">
-        <dl class="details">
-          <dt>Naam</dt>
-          <dd>Mars</dd>
-          <dt>Zuurstof</dt>
-          <dd>0,13 %</dd>
-          <dt>Temperatuur</dt>
-          <dd>−63 &deg;C = 210 K</dd>
-          <dt> Omtrek </dt>
-          <dd> 3389,5 km</dd>
-        </dl>
-      </div>
-       <div class="tab-panel">
-        <img class="flex-img details-img" src="images/aarde.jpg" alt="Foto van de planeet Mars, Mars heeft een bruine/oranje kleur. Over de planeet valt een schaduw aan de rechter zijde. ">
-        <dl class="details">
-          <dt>Naam</dt>
-          <dd>Aarde</dd>
-          <dt>Zuurstof</dt>
-          <dd> 21 %</dd>
-          <dt> Temperatuur </dt>
-          <dd> 0,87 &deg;C </dd>
-          <dt> Omtrek </dt>
-          <dd> 40075 km</dd>
-        </dl>
-      </div>     
-    </div>
-  </div>
-</article>
-</div>
-
-<!-- Einde Info mars/aarde -->
-
 <!-- Charts -->
 
-    <div class="staafdiagram">
-    <canvas id="bar" ></canvas>
-    </div>
-    <div class="donutdiagram"  >
+<section id="chart-container">
+  <div id="flex-containerr">
+    <canvas id="bar"></canvas>
     <canvas id="donut"></canvas>
-    </div>
-    <div class="lijndiagram" >
-    <canvas id="line"></canvas>
-    </div>
-
+   </div>
+   <canvas id="line"></canvas>
+</section>
 
 <!-- Einde Charts -->
-  <div class="footer">
+
   <footer>
     <p>Gemaakt door &#9400; Gaby de Jong | 2020 </p>
   </footer>
-  </div>
  </div> 
 
       <!-- Chart js-->
