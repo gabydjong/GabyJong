@@ -2,8 +2,10 @@
 
 /* ----------- Lijn diagram -------------- */
 Chart.defaults.global.defaultFontColor = 'white'; 
-var ctx = document.getElementById('line');
-var line = new Chart(ctx, {
+
+var ctx = document.getElementById('line').getContext('2d');
+var myChart = new Chart(ctx, {
+
     type: 'line',
     data: {
         labels: ['Jan', 'Feb', 'Maart', 'April', 'Mei'],
@@ -35,6 +37,7 @@ var line = new Chart(ctx, {
         }
     }
 });
+
 
 
 /* ----------- Donut -------------- */
