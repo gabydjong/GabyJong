@@ -66,12 +66,6 @@ figure{
   padding: 20px;
 }
 
-/* zorgt voor een leuk klein border bewegings effect op de brandstof/snelheid/afstand section */
-.column:hover{
-    border: 2px solid black;
-    transition: border 1s ease-in-out;
-}
-
 
 /*  ----------------- Rooster van de dag ------------------ */
 

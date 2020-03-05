@@ -15,7 +15,7 @@ function openPage(pageName,elmnt,color) {
   elmnt.style.backgroundColor = color ;
 }
 
-// Krijg de element met id="defaultOpen" en klik op het
+// Krijg de element met id="defaultOpen" en klik erop
 document.getElementById("defaultOpen").click();
 
 
