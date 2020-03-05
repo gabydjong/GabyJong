@@ -66,6 +66,7 @@ figure{
   padding: 20px;
 }
 
+/* zorgt voor een leuk klein border bewegings effect op de brandstof/snelheid/afstand section */
 .column:hover{
     border: 2px solid black;
     transition: border 1s ease-in-out;
@@ -73,6 +74,12 @@ figure{
 
 
 /*  ----------------- Rooster van de dag ------------------ */
+
+/* Margin voor flexcontainer */
+
+#flex-container1{
+    margin: 0px 20px 0px 20px;
+}
 
 /* Minimale breedte zodat tabel niet te klein kan worden */
 table{
@@ -99,7 +106,8 @@ tbody th{
 }
 
 .article-table{
-    margin: 20px;
+    margin: 40px 20px 0px 20px;
+    height: 420px;
 }
 
 /* Zorgt voor een scrollbar als het scherm te klein is */
@@ -109,35 +117,32 @@ tbody th{
 
 /* Styling tab links */
 .tablink {
-  background-color: rgba(180, 180, 180, 0.5);
-  color: white;
-  float: left;
-  border: 1px solid white;
-  outline: none;
-  cursor: pointer;
-  padding: .5em .9em;
-  font-size: 16px;
+    background-color: rgba(180, 180, 180, 0.5);
+    color: white;
+    float: left;
+    border: 1px solid white;
+    outline: none;
+    cursor: pointer;
+    padding: .5em .9em;
+    font-size: 16px;
 
 }
 
 .tablink:hover, .tablinkplaneet:hover {
-  background-color: #777;
+    background-color: #777;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-  color: white;
-  display: none;
-  padding: 60px 0px;
-  height: 100%;
+    color: white;
+    display: none;
+    padding: 60px 0px;
+    height: 100%;
 }
 
-#Vandaag {background-color: #2C3E50;}
-#Morgen {background-color: #2C3E50;}
-#Mars {background-color: #2C3E50;}
-#Aarde {background-color: #2C3E50;}
-
-
+#Vandaag, #Morgen , #Mars , #Aarde {
+    background-color: #2C3E50;
+ }
 
 /*  ----------------- Mars / Aarde info ------------------ */
 
@@ -200,11 +205,11 @@ tbody th{
 }
 
 
-/*  ---------- Charts ---------- */
+/*  --------------------------- Charts ---------------------------------- */
 
 
 section#chart-container {
-    padding: 0px 20px 20px 20px;
+    padding: 0px 40px 20px 40px;
     width: 100%;
 }
 
@@ -215,29 +220,27 @@ section#chart-container {
 }
 
 canvas {
-    margin: 20px 0 20px 0;
+    margin: 40px 0 0px 0px;
 }
 
 
-/*  ---------- footer ---------- */
+/*  ---------------------------- footer ----------------- */
 
 footer{
     background-color: #2C3E50;
-    padding: 0px 20px 20px 20px;
+    margin: 20px 40px 40px 40px;
 }
 
 footer p{
     text-align: center;
     color: white;
-    margin: 10px 0 10px 0;
-
  }
 
 
 /*  ----------------- Breekpunt 1------------------ */
 
 /*  ------ korte info stukjes komen nu naast elkaar ----------- */
-@media (min-width: 500px) {
+@media (min-width: 550px) {
 
 .row{
     width: 100%;
@@ -248,7 +251,8 @@ footer p{
 }
 
 /*  ----------------- Breekpunt 2------------------ */
-@media (min-width: 600px) {
+@media (min-width: 650px) {
+
 
 /* Er springen nu elementen naast elkaar, omdat het kwa 
 content niet meer anders kan. */
@@ -256,9 +260,14 @@ content niet meer anders kan. */
     display: flex;
 }
 
-#flex-containerr {
-    display: flex;
-    width: 47.6%;
+/* Margin wordt nu weer 20px kleiner, zodat het rooster gelijk komt te staan met de planeten */
+.article-table{
+    margin: 20px 20px 0px 20px;
+}
+
+/* Rooster en info planeten is nu gelijk kwa breedte */
+table{
+    min-width: 40.5vw;
 }
 
 /* Tekst van planeten staat nu rechts van de afbeeldingen in plaats onder. */
@@ -273,34 +282,67 @@ content niet meer anders kan. */
     width: calc(50% - 1em);
 }
 
-/* Ruimte rooster en info planeten is nu bijna gelijk */
-table{
-    min-width: 45.5vw;
+/* Er springen nu elementen naast elkaar, omdat het kwa 
+content niet meer anders kan. */
+#flex-containertwee {
+    display: flex;
+    width: 46.2%;
 }
+
 
 /* zorgt dat er margin tussen de charts komt*/
 #pie{
     margin-left: 20px;
+    margin-top: 20px;
 }
 
 #bar{
     margin-right: 20px;
+    margin-top: 20px;
 }
 
 
+/*  ----------------- Breekpunt 4 ------------------ */
+@media (min-width: 890px){
 
-/*  ----------------- Breekpunt 4------------------ */
-/*  --------- Verspringen van Chart -------- */
-@media (min-width: 900px){
+/* chart grootte verandert nu */
+ #flex-containertwee {
+    width: 47.5%;
+}
+
+/* Rooster en info planeten is nu gelijk kwa breedte */
+table{
+    min-width: 43.5vw;
+}
 
 
 }
 
-/*  ----------------- Breekpunt 5------------------ */
+/*  ----------------- Breekpunt 4 ------------------ */
 @media (min-width: 1200px){
 
-/* chart grootte */
- #flex-containerr {
-    width: 48.5%;
+/* Aantal elementen worden een fractie groter, zodat het iets leesbaarder is */
+.logo{
+    height: 55px;
+}
+
+h1, h2{
+
+    font-size: 1.05em;
+}
+
+td,
+tbody th{
+    font-size: 16px;
+}
+
+/* chart grootte verandert nu */
+ #flex-containertwee {
+    width: 48.2%;
+}
+
+/* Rooster en info planeten is nu gelijk kwa breedte */
+table{
+    min-width: 45vw;
 }
 }
