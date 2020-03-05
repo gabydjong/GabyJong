@@ -122,11 +122,12 @@ tbody th{
 
 }
 
+/* Kleur veranderd als je over de buttons hovert */
 .tablink:hover, .tablinkplaneet:hover {
     background-color: #777;
 }
 
-/* Style the tab content (and add height:100% for full page content) */
+/* Styling van de tab content (100% voor volledige hoogte content) */
 .tabcontent {
     color: white;
     display: none;
@@ -141,7 +142,7 @@ tbody th{
 /*  ----------------- Mars / Aarde info ------------------ */
 
 .infoplaneten{
-    margin: 20px 20px 0px 20px;
+    margin: 40px 20px 0px 20px;
 }
 
 .titel{
@@ -259,6 +260,10 @@ content niet meer anders kan. */
     margin: 20px 20px 0px 20px;
 }
 
+/* margin is weer aangepast naar normaal */
+.infoplaneten{
+    margin: 20px 20px 0px 20px;
+}
 /* Rooster en info planeten is nu gelijk kwa breedte */
 table{
     min-width: 40.5vw;
@@ -282,7 +287,6 @@ content niet meer anders kan. */
     display: flex;
     width: 46.2%;
 }
-
 
 /* zorgt dat er margin tussen de charts komt*/
 #pie{
