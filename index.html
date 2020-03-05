@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8"/>
+    <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Dashboard</title>
+    <title>Op reis naar Mars!</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 
@@ -40,79 +40,149 @@
 <!-- Einde van concrete info -->
 
 <!-- Table -->
-<div id="flex-container1">
-<article class="article-table">
-  <h2 class="titel"> Rooster van de dag </h2>
-    <div class="tab-group">
-    <ul class="tabs">
-      <li class="tab"><a href="#"> Vandaag </a></li>
-      <li class="tab"><a href="#"> Morgen </a></li>
-    </ul>
+  <div id="flex-container1">
+  <article class="article-table">
+    <h2 class="titel"> Rooster van de dag </h2>
+     <button class="tablink" onclick="openPage('Vandaag', this, '#2C3E50')">Vandaag</button>
+     <button class="tablink" onclick="openPage('Morgen', this, '#2C3E50')" id="defaultOpen">Morgen</button>
+
+<!-- Tab vandaag -->
+  <div id="Vandaag" class="tabcontent">
   <div class="table-wrap">
     <table>
-      <thead>
-        <tr>
-          <th scope="col"> Tijd </th>
-          <th scope="col"> Activiteit </th>
-          <th scope="col"> Voor groep </th>
-        </tr>
-      </thead>
+          <thead>
+            <tr>
+              <th scope="col"> Tijd </th>
+              <th scope="col"> Activiteit </th>
+              <th scope="col"> Voor groep </th>
+            </tr>
+          </thead>
 
-      <tbody>
-        <tr>
-          <th scope="row"> 9:00</th>
-          <td>Ontbijten</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th scope="row">9:30</th>
-          <td>Ontbijten</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <th scope="row">10:00</th>
-          <td>Mededeling</td>
-          <td> 1-2 </td>
-        </tr>
-        <tr>
-          <th scope="row">12:00</th>
-          <td>Middag eten</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th scope="row">12:30</th>
-          <td>Middag eten</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <th scope="row">14:00</th>
-          <td>Sporten</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th scope="row">15:00</th>
-          <td>Sporten</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <th scope="row">18:00</th>
-          <td>Avond eten</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <th scope="row">18:30</th>
-          <td>Avond eten</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <th scope="row">22:00</th>
-          <td>Slapen</td>
-          <td>1-2</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</article>
+          <tbody>
+            <tr>
+              <th scope="row"> 9:00</th>
+              <td>Ontbijten</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="row">9:30</th>
+              <td>Ontbijten</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th scope="row">10:00</th>
+              <td>Mededeling</td>
+              <td> 1-2 </td>
+            </tr>
+            <tr>
+              <th scope="row">12:00</th>
+              <td>Middag eten</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="row">12:30</th>
+              <td>Middag eten</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th scope="row">14:00</th>
+              <td>Sporten</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="row">15:00</th>
+              <td>Sporten</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th scope="row">18:00</th>
+              <td>Avond eten</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="row">18:30</th>
+              <td>Avond eten</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th scope="row">22:00</th>
+              <td>Slapen</td>
+              <td>1-2</td>
+            </tr>
+          </tbody>
+        </table>
+       </div>
+    </div>
+
+  <!-- Tab Morgen -->
+
+    <div id="Morgen" class="tabcontent">
+    <div class="table-wrap">
+    <table>
+          <thead>
+            <tr>
+              <th scope="col"> Tijd </th>
+              <th scope="col"> Activiteit </th>
+              <th scope="col"> Voor groep </th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row"> 10:00</th>
+              <td>Ontbijten</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="row">11:00</th>
+              <td>Ontbijten</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th scope="row">12:00</th>
+              <td> Spelletjes </td>
+              <td> 1-2 </td>
+            </tr>
+            <tr>
+              <th scope="row">12:30</th>
+              <td>Middag eten</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="row">13:00</th>
+              <td>Middag eten</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th scope="row">14:00</th>
+              <td> Vrije tijd </td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="row">15:00</th>
+              <td>Sporten</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th scope="row">18:00</th>
+              <td>Avond eten</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="row">18:30</th>
+              <td>Avond eten</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th scope="row">24:00</th>
+              <td>Slapen</td>
+              <td>1-2</td>
+            </tr>
+          </tbody>
+        </table>
+       </div>
+    </div>
+  </article>
 
 <!-- Einde table -->
 
@@ -120,13 +190,10 @@
 <article class="infoplaneten">
   <h2 class="titel"> Informatie planeten </h2>
 
-  <div class="tab-group">
-    <ul class="tabs">
-      <li class="tab"><a href="#"> Mars </a></li>
-      <li class="tab"><a href="#"> de Aarde </a></li>
-    </ul>
+<button class="tablinkplaneet"> Mars / Aarde </button>
 
     <div class="tab-panels">
+
       <div class="tab-panel">
         <img class="details-img" src="images/mars.jpg" alt="Foto van de planeet Mars, Mars heeft een bruine/oranje kleur. Over de planeet valt een schaduw aan de rechter zijde. ">
         <dl class="details">
@@ -140,6 +207,7 @@
           <dd> 3389,5 km</dd>
         </dl>
       </div>
+
        <div class="tab-panel">
         <img class="details-img" src="images/aarde.jpg" alt="Foto van de planeet Mars, Mars heeft een bruine/oranje kleur. Over de planeet valt een schaduw aan de rechter zijde. ">
         <dl class="details">
@@ -152,9 +220,9 @@
           <dt> Omtrek </dt>
           <dd> 40075 km</dd>
         </dl>
-      </div>     
+      </div>  
+
     </div>
-  </div>
 </article>
 </div>
 

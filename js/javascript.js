@@ -1,4 +1,23 @@
 
+/* -----------  Tabs-------------- */
+
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color ;
+}
+
+// Krijg de element met id="defaultOpen" en klik op het
+document.getElementById("defaultOpen").click();
+
 
 /* ----------- Lijn diagram -------------- */
 Chart.defaults.global.defaultFontColor = 'white'; 
@@ -36,7 +55,7 @@ var lijndiagram = new Chart(ctx, {
 });
 
 
-/* ----------- Donut -------------- */
+/* ----------- Piechart -------------- */
 var ctx = document.getElementById('pie');
 var taart = new Chart (ctx, {
     type: 'pie',

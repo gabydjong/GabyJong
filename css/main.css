@@ -81,13 +81,13 @@ table{
 }
 
 thead{
-    background-color: #e2e2e2;
+    background-color: rgba(180, 180, 180, 0.5);
     text-align: left;
 }
 
 thead th{
     padding: .4em;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #414A53;
 }
 
 td,
@@ -107,6 +107,38 @@ tbody th{
     overflow-x: auto;
 }
 
+/* Styling tab links */
+.tablink {
+  background-color: rgba(180, 180, 180, 0.5);
+  color: white;
+  float: left;
+  border: 1px solid white;
+  outline: none;
+  cursor: pointer;
+  padding: .5em .9em;
+  font-size: 16px;
+
+}
+
+.tablink:hover, .tablinkplaneet:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 60px 0px;
+  height: 100%;
+}
+
+#Vandaag {background-color: #2C3E50;}
+#Morgen {background-color: #2C3E50;}
+#Mars {background-color: #2C3E50;}
+#Aarde {background-color: #2C3E50;}
+
+
+
 /*  ----------------- Mars / Aarde info ------------------ */
 
 .infoplaneten{
@@ -119,13 +151,36 @@ tbody th{
     text-align: left;
 }
 
+/*  -------- zorgen dat er niks naast button komt, en juiste padding gebruiken------ */
 
+.tab-panels{
+    clear: both;
+    padding-top: 20px;
+}
+
+
+/* Styling tab link planeet */
+.tablinkplaneet{
+  background-color: #2C3E50;
+  color: white;
+  float: left;
+  border: 1px solid white;
+  outline: none;
+  cursor: pointer;
+  padding: .5em .9em;
+  font-size: 16px;
+
+}
+
+/* Styling planeet foto's */
 .details-img{
     margin-bottom: 1.4rem;
     display: inline-block;
     width: 100%;
 
 }
+
+/* Styling details */
 
 .details{
     margin: 0 0 1.4rem;
@@ -141,26 +196,6 @@ tbody th{
 
 .details dd{
     margin: 0;
-    color: white;
-}
-
-.tabs{
-    margin: 0px 0px 10px 0px;
-    overflow: hidden;
-    padding: 0;
-    list-style-type: none;
-}
-
-.tab{
-    float: left;
-    border: 1px solid white;
-    margin-bottom: 10px;
-}
-
-
-.tab a{
-    display: block;
-    padding: .5em .9em;
     color: white;
 }
 
